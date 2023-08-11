@@ -1,4 +1,13 @@
--- sorry for bad code this is made by me and i'm a bad scripter. so yeah but this is a open source script for some sim i have found i will be updating it i guess.
+--[[
+    sorry for bad code im a luau beginner
+    rip
+    this is a push sim script 
+    edit if you feel like it 
+    
+]]
+
+
+
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -40,7 +49,7 @@ end
 end)
 
 
-Section:NewLabel("idk")
+Section:NewLabel("`")
 
 
 
@@ -65,11 +74,23 @@ game:GetService("ReplicatedStorage").Remotes.PushGain:FireServer()
 end
 end)
 
+Section:NewButton("auto-rebirth", "ButtonInfo", function()
+    _G.testt = true;
 
+while _G.testt == true do
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
 
+ Wait()
+end
+end)
 
+Section:NewButton("turn off auto-rebirth", "ButtonInfo", function()
+    _G.testt = false;
 
+while _G.testt == true do
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
 
-
-
+ Wait()
+end
+end)
 
