@@ -45,7 +45,7 @@ end)
 
 
  local Button = Tab:CreateButton({
-    Name = "(ON) inf money",
+    Name = "(ON) inf strength",
     Callback = function()
         _G.test = true;
 
@@ -60,7 +60,7 @@ game:GetService("ReplicatedStorage").Event.Train:FireServer(99999999999999999999
 
 
  local Button = Tab:CreateButton({
-    Name = "(OFF) inf money",
+    Name = "(OFF) inf strength",
     Callback = function()
         _G.test = false;
 
@@ -77,17 +77,22 @@ game:GetService("ReplicatedStorage").Event.Train:FireServer(99999999999999999999
  local Label = Tab:CreateLabel("i love this game.")
 
 
+ local Label = Tab:CreateLabel("just use these... please")
+
 
  local Button = Tab:CreateButton({
-   Name = "click for inf wins :)",
+   Name = "inf strength",
    Callback = function()
-game:GetService("ReplicatedStorage").Event.WinGain:FireServer(999999999999999999999999999999999999999999999999999999999999) -- legit.... you dont even need to loop this at all
+game:GetService("ReplicatedStorage").Event.Train:FireServer(math.huge) -- no joke inf
 
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "inf wins",
+   Callback = function()
+game:GetService("ReplicatedStorage").Event.WinGain:FireServer(math.huge) -- inf wins no joke lol
 
-
-
- local Label = Tab:CreateLabel(".")
+   end,
+})
 
