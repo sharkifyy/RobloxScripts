@@ -74,35 +74,19 @@ game:GetService("ReplicatedStorage").Event.Train:FireServer(99999999999999999999
  })
 
 
- local Button = Tab:CreateButton({
-    Name = "(ON) inf wins",
-    Callback = function()
-        _G.testt = false;
-
-        while _G.testt == true do
-            
-game:GetService("ReplicatedStorage").Event.WinGain:FireServer(99999999999999999999)
-
-         Wait()
-        end
-    end,
- })
+ local Label = Tab:CreateLabel("i love this game.")
 
 
 
  local Button = Tab:CreateButton({
-    Name = "(OFF) inf wins",
-    Callback = function()
-        _G.testt = false;
+   Name = "click for inf wins :)",
+   Callback = function()
+game:GetService("ReplicatedStorage").Event.WinGain:FireServer(999999999999999999999999999999999999999999999999999999999999) -- legit.... you dont even need to loop this at all
 
-        while _G.testt == true do
-            
-game:GetService("ReplicatedStorage").Event.WinGain:FireServer(99999999999999999999)
+   end,
+})
 
-         Wait()
-        end
-    end,
- })
+
 
 
  local Label = Tab:CreateLabel(".")
