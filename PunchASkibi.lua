@@ -1,6 +1,4 @@
-
-
-
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
     local Window = Rayfield:CreateWindow({
         Name = "SharkHub ` punch a skibi sim",
         LoadingTitle = "Rayfield Interface Suite",
