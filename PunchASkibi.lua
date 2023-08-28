@@ -77,3 +77,30 @@ local Button = Tab:CreateButton({
         end
     end,
  })
+
+
+ local Label = Tab:CreateLabel("Tp to best punching bags")
+
+ local Button = Tab:CreateButton({
+    Name = "(ON)Tp to best punching bag",
+    Callback = function()
+        _G.Combat = true
+        while _G.Combat do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-807, 5, 127) -- the decimals are removed too they dont (really) matter
+         task.wait()
+        end
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "(OFF)tp to best punching bag",
+    Callback = function()
+        _G.Combat = false
+        while _G.Combat do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-807, 5, 127) -- the decimals are removed too they dont (really) matter
+         task.wait()
+        end
+    end,
+ })
+
+ 
